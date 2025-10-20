@@ -1,0 +1,118 @@
+/* APP CCONTAINER */
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+
+.menu-app-container {
+    width: 38rem;
+    background-color: white;
+    border: 10px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* HEADER CONTAINER */
+.header-container {
+    border: 3px solid red;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32rem;
+    margin-top: 2rem;
+    height: 5rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+/* BODY CONTAINER */
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* COLUMNS */
+.column {
+    height: auto;
+    width: 15rem;
+    height: 20rem;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.column.left {
+    margin-right: 1rem;
+}
+
+.column.right {
+    margin-left: 1rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU CONTAINER */
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid red;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+/* MENU TITLE */
+h2 {
+    text-transform: uppercase;
+}
+
+/* MENU ITEM */
+.menu-item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.item-name {
+    color: red;
+}
+
+.item-price {
+    color: black;
+}
+
+.menu-container.sides {
+    flex: 1;
+}
+
+.menu-container-drinks {
+    flex: 1;
+}
+
+.menu-container.food {
+    margin-bottom: 2rem;
+}
+
+
