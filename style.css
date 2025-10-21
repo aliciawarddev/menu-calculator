@@ -91,8 +91,14 @@ h2 {
 .menu-item {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: center;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .item-name {
@@ -115,4 +121,17 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* BURGER IMAGE */
+.burger-image {
+    width: 8rem;
+    height: auto;
+    margin-top: 1rem;
+}
 
+/* MENU CALCULATOR */
+.menu-calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
