@@ -91,8 +91,9 @@ h2 {
 .menu-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0.2rem 0;
+    width: 80%;
 }
 
 .menu-item input[type="checkbox"] {
@@ -102,9 +103,10 @@ h2 {
 .item-info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex: 1;
+    width: 100%;
 }
 
 .item-name {
@@ -113,6 +115,7 @@ h2 {
 
 .item-price {
     color: black;
+    white-space: nowrap;
 }
 
 .menu-container.sides {
@@ -143,7 +146,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     width: 32rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
     padding: 1rem;
     box-sizing: border-box;
 }
