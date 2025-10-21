@@ -90,8 +90,13 @@ h2 {
 /* MENU ITEM */
 .menu-item {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+
+.menu-item input[type="checkbox"] {
+    margin-right: 0.5rem;
 }
 
 .item-info {
@@ -99,6 +104,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex: 1;
 }
 
 .item-name {
@@ -128,10 +134,28 @@ h2 {
     margin-top: 1rem;
 }
 
-/* MENU CALCULATOR */
-.menu-calculator {
+/* TOTAL CONTAINER */
+.total-container {
+    border: 3px solid red;
+    background-color: yellow;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: 32rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.total-container h2 {
+    color: red;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+#commentary {
+    color: red;
+    font-weight: bold;
+    margin-top: 0.5rem;
 }
