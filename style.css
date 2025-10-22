@@ -3,8 +3,12 @@
     --green-light: #67BC23;
     --green-dark: #7cb342;
     --green-pastel: #dcedc8;
-    --yellow: #FCFA5A;
-    --red: #C90101;
+    --yellow: #FDCE00;
+    --yellow-light: #FDD933;
+    --yellow-lightest: #FEE566;
+    --red: #DF2B1D;
+    --red-light: #E55549;
+    --red-dark: #C8271A;
     --grey: #F8F8F8;
     --charcoal: #333333;
     --orange: #FF6B35;
@@ -29,12 +33,13 @@ html {
 .menu-app-container {
     width: 38rem;
     background-color: white;
-    border: 6px solid var(--red);
+    border: 6px solid var(--red-dark);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .body {
@@ -44,7 +49,7 @@ html {
 /* HEADER CONTAINER */
 .header-container {
     border: 3px solid var(--red);
-    background-color: var(--yellow);
+    background-color: var(--yellow-lightest);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +57,11 @@ html {
     margin-top: 2rem;
     height: 5rem;
     box-sizing: border-box;
+    border-radius: 3px;
 }
 
 h1 {
-    color: var(--red);
+    color: var(--red-dark);
     text-transform: uppercase;
     font-size: 3rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -106,6 +112,7 @@ h1 {
     border: 3px solid var(--red);
     background-color: var(--grey);
     padding-bottom: 1rem;
+    border-radius: 3px;
 }
 
 /* MENU TITLE */
@@ -160,7 +167,7 @@ input[type="checkbox"] {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 2px solid var(--red);
+    border: 2px solid var(--red-dark);
     border-radius: 3px;
     background-color: var(--white);
     cursor: pointer;
@@ -171,7 +178,7 @@ input[type="checkbox"] {
 
 /* Checkbox hover state */
 input[type="checkbox"]:hover {
-    background-color: var(--yellow);
+    background-color: var(--yellow-lightest);
     transform: scale(1.1);
 }
 
@@ -214,7 +221,7 @@ input[type="checkbox"]:checked::after {
 /* TOTAL CONTAINER */
 .total-container {
     border: 3px solid var(--red);
-    background-color: var(--yellow);
+    background-color: var(--yellow-lightest);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,10 +233,11 @@ input[type="checkbox"]:checked::after {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    border-radius: 3px;
 }
 
 .total-container h2 {
-    color: var(--red);
+    color: var(--red-dark);
     margin: 0;
     font-size: 2rem;
     font-family: 'Bebas Neue', sans-serif;
