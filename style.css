@@ -1,8 +1,8 @@
 /* CUSTOM VARIABLES */
 :root {
     --green: #66BC27;
-    --green-light: #7FC952;
-    --green-lightest: #B2E3A8;
+    --green-light: #B2E3A8;
+    --green-lightest: #CCF0D3;
     --green-dark: #5CAF23;
     --yellow: #FDCE00;
     --yellow-light: #FDD933;
@@ -18,7 +18,15 @@
 }
 
 html {
-    background-color: var(--green-lightest);
+ background: 
+  linear-gradient(45deg, rgba(230, 247, 233, 0.3) 25%, transparent 25%),
+  linear-gradient(-45deg, rgba(230, 247, 233, 0.3) 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, rgba(230, 247, 233, 0.3) 75%),
+  linear-gradient(-45deg, transparent 75%, rgba(230, 247, 233, 0.3) 75%);
+background-size: 160px 160px, 160px 160px, 160px 160px, 160px 160px;
+background-position: 0 0, 0 80px, 80px -80px, -80px 0px;
+background-color: var(--green-light);
+    
 }
 
 /* APP CCONTAINER */
