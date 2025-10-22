@@ -1,22 +1,24 @@
 /* CUSTOM VARIABLES */
 :root {
-    --green-light: #67BC23;
-    --green-dark: #7cb342;
-    --green-pastel: #dcedc8;
+    --green: #66BC27;
+    --green-light: #7FC952;
+    --green-lightest: #B2E3A8;
+    --green-dark: #5CAF23;
     --yellow: #FDCE00;
     --yellow-light: #FDD933;
     --yellow-lightest: #FEE566;
     --red: #DF2B1D;
     --red-light: #E55549;
     --red-dark: #C8271A;
-    --grey: #F8F8F8;
+    --grey-light: #F8F8F8;
+    --grey: #999999;
     --charcoal: #333333;
     --orange: #FF6B35;
     --pink: #FFE5E5;
 }
 
 html {
-    background-color: var(--green-pastel);
+    background-color: var(--green-lightest);
 }
 
 /* APP CCONTAINER */
@@ -110,7 +112,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     border: 3px solid var(--red);
-    background-color: var(--grey);
+    background-color: var(--grey-light);
     padding-bottom: 1rem;
     border-radius: 3px;
 }
@@ -131,7 +133,7 @@ h2::after {
     display: block;
     width: 100;
     height: 3px;
-    background-color: var(--green-light);
+    background-color: var(--green);
     margin: 0.1rem auto 0;
     border-radius: 2px;
 }
@@ -185,7 +187,6 @@ input[type="checkbox"] {
 /* Checkbox hover state */
 input[type="checkbox"]:hover {
     background-color: var(--yellow-lightest);
-    transform: scale(1.1);
 }
 
 /* Checkbox checked state */
@@ -202,7 +203,7 @@ input[type="checkbox"]:checked::after {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--charcoal);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -248,15 +249,15 @@ input[type="checkbox"]:checked::after {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
     margin-top: 0.2rem;
-    color: var(--charcoal);
+    color: var(--green-dark);
 }
 
 .total-label {
-  color: var(--red-dark);
+  color: var(--charcoal);
 }
 
 #total {
-  color: var(--charcoal); 
+  color: var(--green-dark); 
 }
 
 #commentary {
@@ -266,4 +267,5 @@ input[type="checkbox"]:checked::after {
     font-weight: 500;
     font-size: 0.9rem;
     font-style: italic;
+    opacity: 0.8;
 }
