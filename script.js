@@ -7,9 +7,7 @@ function calculateTotal() {
 // Function to generate commentary based on the total
 function addCommentary(total) {
     if (total === 0) return 'Select items to order!';
-    if (total < 10) return `Nice! You're spending $${total.toFixed(2)}. Light appetite!`;
-    if (total < 20) return `Good choice! Total: $${total.toFixed(2)}. Solid meal!`;
-    return `Wow! $${total.toFixed(2)}. Going all out!`;
+    return '';
 }
 
 // Function to update the total display and commentary
